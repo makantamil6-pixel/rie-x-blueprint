@@ -77,7 +77,7 @@ st.caption(f"**A Consolidated Global Blueprint for the Trust Economy** | Current
 st.markdown("---")
 
 # Layout into two main operational views
-doc_view, simulation_view = st.columns([3, 2])
+doc_view, simulation_view = st.columns()
 
 with doc_view:
     st.markdown("## 📜 Executive Blueprint Document")
@@ -123,7 +123,7 @@ with simulation_view:
     
     kpi1, kpi2 = st.columns(2)
     kpi1.metric("Active Network Size", f"{total_participants:,} Workers")
-    kpi2.metric("Per-Capita Income Boost", f"+{per_capita_increase_pct:.2f}%")
+    kpi2.metric("Per-Capita Income Boost", f"+{per_capita_income_boost:.2f}%")
     
     kpi3, kpi4 = st.columns(2)
     kpi3.metric(f"Net Capital Surplus ({currency_symbol})", f"{net_riex_surplus:,.2f}")
