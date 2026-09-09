@@ -76,8 +76,8 @@ st.markdown(f"<h1 class='main-header'>THE RURAL INTEGRATED TOKENIZED ECONOMY (RI
 st.caption(f"**A Consolidated Global Blueprint for the Trust Economy** | Currently Optimizing for: `{region}`")
 st.markdown("---")
 
-# Layout into two main operational views
-doc_view, simulation_view = st.columns()
+# Layout into two main operational views - Fixed by adding '2' columns argument
+doc_view, simulation_view = st.columns(2)
 
 with doc_view:
     st.markdown("## 📜 Executive Blueprint Document")
